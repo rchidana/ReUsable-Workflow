@@ -6,7 +6,7 @@ on:
       username:
         required: true
         type: string
-	secrets:
+    secrets:
       DB_USER:
         required: true
 
