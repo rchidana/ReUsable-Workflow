@@ -1,0 +1,12 @@
+name: caller-workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Call-Workflow-A:
+    uses: rchidana/ReUsable-Workflow/.github/workflows/Called-Workflow-A.yml@main
+    with:
+      username: Anand
+    secrets:
+      token: ${{ secrets.DB_USER }}
